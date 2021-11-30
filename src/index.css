@@ -40,8 +40,10 @@ code {
   --tile-size: 20px for example will set size of the grid squares. */
   --cols: 10;
   --rows: 18;
-  --tile-size: 20px;
+  --tile-size: 40px;
   --border-width: 5px;
+
+
 }
 
 /* Colors */
@@ -87,4 +89,14 @@ code {
   border-top-color: var(--border-top-color);
   border-right-color: var(--border-right-color);
   border-bottom-color: var(--border-bottom-color);
+}
+* {
+  box-sizing: border-box;
+}
+
+.grid-board {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), var(--tile-size));
+  grid-gap: 0;
+  align-self: flex-start;
 }
