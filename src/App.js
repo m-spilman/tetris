@@ -2,6 +2,7 @@ import './App.css';
 import Board from './components/Board';
 import { boardSize, nextSize } from './constants';
 import ScoreBoard from './components/ScoreBoard';
+import Controls from './components/Controls';
 function App() {
   const {boardWidth, boardHeight} = boardSize
   const {nextWidth, nextHeight} = nextSize
@@ -14,6 +15,7 @@ function App() {
       <Board boardWidth={boardWidth} boardHeight={boardHeight} next= {false} color='1' />
       <Board boardWidth={nextWidth} boardHeight ={nextHeight} next= {true} color = '0'/>
       <ScoreBoard />
+      <Controls />
     
     </div>
   );
