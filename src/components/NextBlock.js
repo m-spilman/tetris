@@ -1,7 +1,6 @@
 import React from 'react'
 import GridSquare from './GridSquare'
 import { useSelector } from 'react-redux'
-// import { shapes } from '../shapes'
 import { shapes } from '../utils'
 
 // Draws the "next" block view showing the next block to drop
